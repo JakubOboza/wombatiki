@@ -1,0 +1,19 @@
+<%= form_tag('/admin/ban_ip') %>
+<p>
+Ip to bann
+<%= text_field(:banned_ip,:banned_ip, :size => 80) %>
+</p>
+<%= submit_tag "Ban!" %>
+
+<br><br>
+<p>
+<ul>
+<% @banned.each do |ban| %>
+
+  <li><%= ban.banned_ip %> <%= link_to "remove ban", "/admin/unban_ip?ip=#{ban.banned_ip}" %> </li>
+
+<% end %>
+</ul>
+</p>
+
+<br/><br/>

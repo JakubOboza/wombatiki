@@ -1,0 +1,197 @@
+/* ****************************** */
+/* * GENERAL */
+/* ****************************** */
+body {
+  font-family: "Lucida Grande", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1;
+  min-width: 834px; }
+
+code {
+  font: bold 12px "Courier" serif; }
+
+h1 {
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%; }
+
+h1, h1 input {
+  font: bold 28px "Arial" sans-serif;
+  letter-spacing: 1px; }
+
+h1 input {
+  width: 99%; }
+
+h2 {
+  font: bold 22px "Lucida Grande" sans-serif;
+  margin-bottom: 10px; }
+
+h3 {
+  font: bold 16px "Lucida Grande";
+  margin: 10px 0px; }
+
+p {
+  line-height: 1.3em;
+  margin-bottom: 1em; }
+
+pre {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 12px; }
+  pre code {
+    font-weight: normal; }
+
+strong {
+  font-weight: bold; }
+
+ul {
+  list-style-type: none;
+  margin-bottom: 1em; }
+  ul li {
+    line-height: 1.3em;
+    margin-bottom: 1em; }
+
+#notice {
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 25px; }
+
+/* ****************************** */
+/* * HEADER */
+/* ****************************** */
+#header {
+  height: 74px;
+  margin-bottom: 25px;
+  width: 100%; }
+  #header img {
+    margin-top: 8px;
+    float: left; }
+
+/* ****************************** */
+/* * BRANDING */
+/* ****************************** */
+#branding h1 {
+  border-bottom: none;
+  float: left;
+  height: 60px;
+  margin-bottom: 0;
+  margin-left: 20px;
+  margin-top: 25px;
+  width: 400px; }
+
+/* ****************************** */
+/* * NAVIGATION */
+/* ****************************** */
+ul#navigation {
+  display: block;
+  float: right;
+  margin-right: 20px;
+  margin-top: 25px;
+  width: 19em; }
+  ul#navigation li {
+    display: block;
+    float: left; }
+    ul#navigation li a {
+      display: block;
+      float: left;
+      margin: 0px 5px;
+      padding: 6px 9px 28px 9px; }
+  ul#navigation li.last a {
+    margin-right: 0; }
+
+/* ****************************** */
+/* * CONTENT */
+/* ****************************** */
+#content {
+  float: left;
+  margin: 0 13px 25px 15px;
+  padding: 15px;
+  position: relative;
+  width: 70%; }
+  #content blockquote p {
+    font-style: oblique;
+    margin: 20px; }
+  #content li {
+    margin-bottom: 5px;
+    margin-left: 18px; }
+  #content ol {
+    padding-left: 20px; }
+  #content textarea {
+    height: 400px;
+    width: 99%; }
+  #content ul {
+    list-style-type: disc; }
+  #content ul#list-of-pages, #content ul#recent-edits, #content form ul {
+    list-style-type: none;
+    padding-left: 0; }
+  #content #page-form h1 {
+    border-bottom: none;
+    margin-bottom: 10px; }
+  #content #page-form p {
+    margin-bottom: 0; }
+    #content #page-form p a {
+      text-decoration: none; }
+
+/* ****************************** */
+/* * EDITS */
+/* ****************************** */
+#edits .edit {
+  margin-bottom: 30px; }
+  #edits .edit .addition, #edits .edit .deletion {
+    border: 1px solid #999;
+    margin-bottom: 10px;
+    padding: 10px; }
+  #edits .edit .addition {
+    border-left: 7px solid green; }
+  #edits .edit .deletion {
+    border-left: 7px solid red; }
+  #edits .edit .timestamp {
+    border-bottom: 3px solid #999;
+    color: #777;
+    text-align: right; }
+
+/* ****************************** */
+/* * SIDEBAR */
+/* ****************************** */
+#sidebar {
+  float: left;
+  width: 23%; }
+
+/* ****************************** */
+/* * FOOTER */
+/* ****************************** */
+#footer {
+  clear: both; }
+  #footer p {
+    padding: 12px;
+    margin: 0;
+    text-align: center; }
+
+/* ****************************** */
+/* * ADMIN SECTION */
+/* ****************************** */
+#edit-filters {
+  position: absolute;
+  right: 14px;
+  top: 5px; }
+
+#recent-edits h2 {
+  margin-top: 0; }
+#recent-edits li {
+  padding: 5px;
+  position: relative; }
+  #recent-edits li .moderate-edit {
+    position: absolute;
+    right: 6px;
+    top: 11px; }
+
+#recent-edits button, #edit-filters button {
+  display: block;
+  float: left;
+  font-size: 100%;
+  line-height: 130%;
+  margin-left: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 5px 10px 6px 7px; }

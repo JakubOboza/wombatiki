@@ -1,0 +1,18 @@
+<%= @page.content %>
+
+<br />
+<br />
+
+Author: <%= @page.author %> ip: <%= request.remote_ip %> : changed at <%= @page.updated_at %> : <%= link_to "edit", edit_page_path(@id) %> : see older versions <%= select_version(@version) %> 
+
+<% if @old %>
+ <%= link_to " revert to this version ", revert_page_link(@id,@old) %>
+<% end %>
+
+
+<%= form_tag("/pages/#{@page.permalink}", :method => :get, :id => "version_form" ) %>
+  <input type="hidden" id="old_version" name="version" value="" />
+
+
+
+
