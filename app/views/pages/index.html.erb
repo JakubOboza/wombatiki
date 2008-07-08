@@ -1,7 +1,6 @@
-<ul>
+<dl>
 <% @pages.each do |page| %>
-
-<li><h2><%= link_to page.name, permalink_path(page) %></h2>  last edited by <%= page.author %> on <%= page.updated_at %> </li>
-
+  <dt><%= link_to page.name, permalink_path(page) %></dt>
+  <dd>last edited by <%= page.author %> on <%= page.updated_at %></</dd>
 <% end %>
-</ul>
+</dl>

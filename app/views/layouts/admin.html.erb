@@ -23,28 +23,28 @@
 
 
   </head>
-  <body>
-    <div id='header'>
-
-      <div id='branding'>
-        <h1>Fiki miki</h1>
-        <ul id='navigation'>
-          <% if is_logged_in? %>
-            <%= render :partial => "layouts/adminmenu"%>
-          <% end %>
+  <body id="admin">
+    <a href="#nav" class="hidden">To the navigation</a>
+    <div id="wrapper">
+      <div id="header">
+        <h1><a href="/" title="Back to the index"><%= WOMBATIKI_TITLE %></a></h1>      
+        <ul id="nav">
+          <li class="first"><%= link_to "Home", "/" %></li>
+          <li><%= link_to "All pages", pages_url %></li>
+          <li class="right">
+            <a href="http://www.lunarlogicpolska.com" title="Lunar Logic Polska: Agile web development">Lunar Logic Polska</a>
         </ul>
       </div>
-    </div>
-    <div id='content'>
-       <%= yield %>
-    </div>
-
-    <div id='footer'>
-      <p>
-        &copy;2008, Jakub Oboza
-        | Wiki powered by
-        <a href='#'>Wombatiki</a>
-      </p>
+      
+      <div id="content">
+        <%= yield %>
+      </div>
+      
+      <div id="footer">
+        <small>
+          &copy;2008, Jakub Oboza | Wiki powered by <a href='#'>Wombatiki</a>
+        </small>
+      </div>
     </div>
   </body>
 </html>

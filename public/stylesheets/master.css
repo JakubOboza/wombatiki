@@ -1,197 +1,148 @@
-/* ****************************** */
-/* * GENERAL */
-/* ****************************** */
 body {
-  font-family: "Lucida Grande", Arial, sans-serif;
-  font-size: 12px;
-  font-weight: normal;
-  line-height: 1;
-  min-width: 834px; }
+  text-align:center;
+  margin:0;
+  padding:0;
+  font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size:10px;
+  font-weight:500;
+}
 
-code {
-  font: bold 12px "Courier" serif; }
+a {
+  color:#4183C4;
+  text-decoration:none;
+}
 
+a:hover {
+  text-decoration:underline;
+}
+
+.hidden {
+  display:none;
+}
+
+li {
+  float:left;
+}
+
+.right {
+  float:right;
+}
+
+#wrapper {
+  width:96em;
+  margin:0 auto;
+  text-align:left;
+  padding:2em 0 0;
+}
+
+#nav {
+  position:absolute;
+  top:0;
+  left:0;
+  line-height:2em;
+  background:#222;
+  border-bottom:1px solid #444;
+  width:100%;
+  padding:0;
+}
+
+#nav li {
+  font-size:1.1em;
+  margin-right:2em;
+}
+
+#nav li.first {
+  margin-left:20px;
+}
+
+#nav li a {
+  color:#999;
+}
+
+#nav li a:hover {
+  color:#fff;
+}
+
+#header {
+  height:10em;
+  background:#e0e0e0;
+  border-bottom:2px solid #ccc;
+  margin-bottom:2em;
+  padding:0 2em;
+}
+
+#header h1 {
+  font-size:3.6em;
+  color:#222;
+  padding-top:0.8em;
+  text-transform:lowercase;
+}
+
+#content {
+  font-size:1.3em;
+}
+
+#content li {
+  float:none;
+  margin-left:2em;
+}
+
+#content dl {
+  padding-left:2em;
+}
+
+#content dd {
+  font-size:0.9em;
+  color:#888;
+}
+
+#content dt {
+  font-size:1.6em;
+  font-weight:900;
+}
+
+#content .author {
+  margin:2em 0 0;
+  font-size:0.9em;
+  color:#888;
+}
+
+#footer {
+  border-top:2px solid #ccc;
+  background:#e0e0e0;
+  margin-top:2em;
+  padding:2em;
+}
+
+#footer small {
+  color:#888;
+}
+
+#admin fieldset {
+  margin:0 2em;
+}
+
+/* overall wiki styles */
 h1 {
-  margin-bottom: 20px;
-  text-align: left;
-  width: 100%; }
-
-h1, h1 input {
-  font: bold 28px "Arial" sans-serif;
-  letter-spacing: 1px; }
-
-h1 input {
-  width: 99%; }
+  font-size:1.8em;
+}
 
 h2 {
-  font: bold 22px "Lucida Grande" sans-serif;
-  margin-bottom: 10px; }
+  font-size:1.6em;
+}
 
 h3 {
-  font: bold 16px "Lucida Grande";
-  margin: 10px 0px; }
+  font-size:1.4em;
+}
 
-p {
-  line-height: 1.3em;
-  margin-bottom: 1em; }
+h4 {
+  font-size:1.3em;
+}
 
-pre {
-  margin-bottom: 10px;
-  margin-top: 10px;
-  padding: 12px; }
-  pre code {
-    font-weight: normal; }
+h5 {
+  font-size:1.2em;
+}
 
-strong {
-  font-weight: bold; }
-
-ul {
-  list-style-type: none;
-  margin-bottom: 1em; }
-  ul li {
-    line-height: 1.3em;
-    margin-bottom: 1em; }
-
-#notice {
-  font-size: 2em;
-  font-weight: bold;
-  margin-left: 25px; }
-
-/* ****************************** */
-/* * HEADER */
-/* ****************************** */
-#header {
-  height: 74px;
-  margin-bottom: 25px;
-  width: 100%; }
-  #header img {
-    margin-top: 8px;
-    float: left; }
-
-/* ****************************** */
-/* * BRANDING */
-/* ****************************** */
-#branding h1 {
-  border-bottom: none;
-  float: left;
-  height: 60px;
-  margin-bottom: 0;
-  margin-left: 20px;
-  margin-top: 25px;
-  width: 400px; }
-
-/* ****************************** */
-/* * NAVIGATION */
-/* ****************************** */
-ul#navigation {
-  display: block;
-  float: right;
-  margin-right: 20px;
-  margin-top: 25px;
-  width: 19em; }
-  ul#navigation li {
-    display: block;
-    float: left; }
-    ul#navigation li a {
-      display: block;
-      float: left;
-      margin: 0px 5px;
-      padding: 6px 9px 28px 9px; }
-  ul#navigation li.last a {
-    margin-right: 0; }
-
-/* ****************************** */
-/* * CONTENT */
-/* ****************************** */
-#content {
-  float: left;
-  margin: 0 13px 25px 15px;
-  padding: 15px;
-  position: relative;
-  width: 70%; }
-  #content blockquote p {
-    font-style: oblique;
-    margin: 20px; }
-  #content li {
-    margin-bottom: 5px;
-    margin-left: 18px; }
-  #content ol {
-    padding-left: 20px; }
-  #content textarea {
-    height: 400px;
-    width: 99%; }
-  #content ul {
-    list-style-type: disc; }
-  #content ul#list-of-pages, #content ul#recent-edits, #content form ul {
-    list-style-type: none;
-    padding-left: 0; }
-  #content #page-form h1 {
-    border-bottom: none;
-    margin-bottom: 10px; }
-  #content #page-form p {
-    margin-bottom: 0; }
-    #content #page-form p a {
-      text-decoration: none; }
-
-/* ****************************** */
-/* * EDITS */
-/* ****************************** */
-#edits .edit {
-  margin-bottom: 30px; }
-  #edits .edit .addition, #edits .edit .deletion {
-    border: 1px solid #999;
-    margin-bottom: 10px;
-    padding: 10px; }
-  #edits .edit .addition {
-    border-left: 7px solid green; }
-  #edits .edit .deletion {
-    border-left: 7px solid red; }
-  #edits .edit .timestamp {
-    border-bottom: 3px solid #999;
-    color: #777;
-    text-align: right; }
-
-/* ****************************** */
-/* * SIDEBAR */
-/* ****************************** */
-#sidebar {
-  float: left;
-  width: 23%; }
-
-/* ****************************** */
-/* * FOOTER */
-/* ****************************** */
-#footer {
-  clear: both; }
-  #footer p {
-    padding: 12px;
-    margin: 0;
-    text-align: center; }
-
-/* ****************************** */
-/* * ADMIN SECTION */
-/* ****************************** */
-#edit-filters {
-  position: absolute;
-  right: 14px;
-  top: 5px; }
-
-#recent-edits h2 {
-  margin-top: 0; }
-#recent-edits li {
-  padding: 5px;
-  position: relative; }
-  #recent-edits li .moderate-edit {
-    position: absolute;
-    right: 6px;
-    top: 11px; }
-
-#recent-edits button, #edit-filters button {
-  display: block;
-  float: left;
-  font-size: 100%;
-  line-height: 130%;
-  margin-left: 7px;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 5px 10px 6px 7px; }
+h6 { 
+  font-size:1em;
+}
