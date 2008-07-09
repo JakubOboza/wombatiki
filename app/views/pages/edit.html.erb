@@ -1,6 +1,6 @@
 <% form_for :page, :url => page_path(@page) , :html => {:method => :put} do |f| %>
     <%= error_messages_for 'page' %>
-    <%= f.text_area :content %><br />
+    <%= f.text_area :content , :cols => 120 , :rows => 25 %><br />
     <%= f.text_field :author ,:value => "anonym" %><br />
     <%= submit_tag "save" %>
 <% end %>

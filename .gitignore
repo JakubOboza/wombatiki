@@ -1,2 +1,5 @@
 log/*
 config/database.yml
+.DS_Store
+public/.DS_Store
+public/javscripts/.DS_Store
