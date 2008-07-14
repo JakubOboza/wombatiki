@@ -12,7 +12,7 @@ class PagesController < ApplicationController
   end
   
   def index
-    @pages = Page.find(:all, :order => "updated_at desc")
+    @pages = Page.find(:all) #, :order => "updated_at desc")
   end
   
   def edit
