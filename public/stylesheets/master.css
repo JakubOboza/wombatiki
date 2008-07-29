@@ -94,11 +94,13 @@ li {
 #content dd {
   font-size:0.9em;
   color:#888;
+  margin:0 0 1em 0;
 }
 
 #content dt {
   font-size:1.6em;
   font-weight:900;
+  margin:1em 0 0;
 }
 
 #content .author {
