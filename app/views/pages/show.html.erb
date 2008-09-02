@@ -1,4 +1,6 @@
-<%= @page.content %>
+<%= BlueCloth.new(@page.content.to_s).to_html %>
+
+<% puts "\n\n----\n\ n#{BlueCloth.new(@page.content.to_s).to_html }\n\n----\n\n" %>
 
 <div class="author">
 Author: <%= @page.author %> ip: <%= request.remote_ip %> : changed at <%= @page.updated_at %> : <%= link_to "edit", edit_page_path(@id) %> : see older versions <%= select_version(@version) %> 
